@@ -142,7 +142,7 @@ PercentRent.gg <- hennepin_base.gg +
   theme_map() +
   theme(
     plot.title   = element_text(size  = 12,
-                                hjust = 0.35),
+                                hjust = 0.5),
     legend.text  = element_text(size = 10),
     legend.title = element_text(size = 15),
     legend.position = "bottomright"
