@@ -28,20 +28,25 @@ jobs:
                any::knitr
                any::rmarkdown
                any::dplyr
-               any::tidyr
                any::ggplot2
-               any::lubridate
-               any::googleway
-               any::purrr
-               any::leaflet
-               any::gepaf
+               any::osmdata
+               any::gt
+               any::ggmap
+               any::tidycensus
+               any::plotly
+               any::sf
+               any::viridis
+               any::ggthemes
+               any::tidyverse
+               any::janitor
+               
       - name: Render document
         uses: quarto-dev/quarto-actions/render@v2
         env:
-          MAPS_API_KEY: ${{ secrets.MAPS_API_KEY }}
+          MAPS_API_KEY: ${{ secrets.CEN_API_KEY }}
         with:
           to: html
-          path: drive_times_report.qmd
+          path: Tidycensus.qmd
       - name: Setup git config
         run: |
           git config user.name "GitHub Actions Bot"
