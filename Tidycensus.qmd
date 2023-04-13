@@ -22,7 +22,7 @@ library(sf)
 library(ggplot2)
 library(osmdata)
 library(janitor)
-library(viridis, quietly = TRUE)
+library(viridis)
 
 
 
@@ -116,8 +116,6 @@ mn_rent_plotly.df <- final_census.df %>%
     )
   )
 ```
-
-## TidyCensus Map
 
 ```{r}
 #| echo: false
