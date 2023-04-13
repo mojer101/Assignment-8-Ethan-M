@@ -54,8 +54,8 @@ hennepin_base.gg <- ggmap(mn_base.map) +
   geom_polygon(data = hennepin.outline, aes(x = longitude, y = latitude), colour = "black", size = 1.6, alpha = 0.1) +
   theme_map() +
   theme(
-    plot.title   = element_text(size  = 16,
-                                hjust = 0.5),
+    plot.title   = element_text(size  = 16),
+                                #hjust = 0.5),
     legend.text  = element_text(size = 16),
     legend.title = element_text(size = 16),
     legend.position = "right"
