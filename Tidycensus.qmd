@@ -121,8 +121,7 @@ mn_rent_plotly.df <- final_census.df %>%
 
 ```{r}
 #| echo: false
-#| message: false
-#| warning: false
+
 
 
 #Generate the ggplot
